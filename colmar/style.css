@@ -1,0 +1,446 @@
+body {
+padding: 0px;
+margin: 0px;
+}
+
+h1,
+h2,
+h3{
+  font-family: 'Raleway', sans-serif;
+}
+
+p,
+span {
+  font-family: 'Catamaran', sans-serif;
+}
+
+
+/** header **/
+
+.header {
+  display:flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  height: 4em;
+}
+
+
+.name {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  height: 2em;
+}
+
+.name academy {
+  color: red;
+}
+
+.nav {
+  padding-right: 1.5em;
+}
+
+.nav span {
+  padding-left: 1em;
+  text-decoration: none;
+}
+
+a {
+  text-decoration:none;
+  color: inherit;
+}
+
+.mobile-logos {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 480px) {
+  .mobile-logos {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav,
+  .name{
+    display: none;
+  }
+}
+
+/** Content starts from here **/
+
+/** top banner **/
+.top {
+  display: flex;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.top-banner {
+  width: 60%;
+  margin: 2em 1.5em 2em 1.5em;
+}
+
+.top-banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.top-banner-text h1 {
+  font-size: 3.5em;
+  color: rgb(55, 55, 56);
+  margin: 0;
+}
+
+.top-banner-text h3 {
+  font-size: 1.5em;
+  color: rgb(55, 55, 56);
+}
+
+
+.top-banner-text button {
+  background-color: rgb(55, 55, 56);
+  border: none;
+  color: white;
+  padding: 0.5em 0 0.5em 0;
+  text-align: center;
+  margin-right: 200px;
+  margin-bottom: 32.160px;
+}
+
+.top-banner-text a {
+  color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  .top{
+    display: flex;
+    flex-direction: column;
+  }
+  .top-banner{
+    width: 100%;
+    margin: 0;
+  }
+  .top-banner-text{
+    width: auto;
+    padding: 2em 1em 2em 1em;
+  }
+  .top-banner-text h1{
+    font-size: 2.5em;
+  }
+  .top-banner-text h3{
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+  .top-banner-text button{
+    margin-right: 1em;
+
+  }
+}
+
+/** 2nd 1-3 section **/
+
+.second {
+  display: flex;
+  width: 100%;
+}
+
+.big-ban{
+  width: 60%;
+  margin: 2em 1.5em 2em 1.5em;
+  height: 100%
+}
+
+.big-ban img{
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.big-ban h1 {
+  margin: 0em;
+  font-size: 2em;
+}
+
+.big-ban p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-right: 1.5em;
+  font-size: 1.35em;
+}
+
+.three-banners {
+  width: 40%;
+  padding: 1em 0em 2em 0em;
+  border-left: 1px solid lightgray;
+}
+
+.sm-ban-text {
+  display: flex;
+  padding: 1em 0em 1em 1em;
+}
+
+
+.sm-ban {
+  width: 35%;
+  height: 100%;
+}
+
+.sm-ban img {
+  width: 100%;
+  height: 100%;
+}
+
+.sm-ban-text:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+.sm-text {
+  width: 65%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.sm-text h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.sm-text p {
+  margin: 0;
+  font-size: 1.2em;
+  color: gray;
+}
+
+#read-more {
+  color: rgb(118, 166, 255);
+}
+
+@media only screen and (min-width: 480px) {
+  .sm-ban-m {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .keep-practice-banner {
+    display: none;
+  }
+  .three-banners {
+    width: 100%
+  }
+  .sm-ban-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 1em 1em
+  }
+  .sm-ban {
+    display: none;
+  }
+
+  .sm-text {
+    width: auto;
+    padding-left: 1em;
+    padding-top: 1em;
+
+  }
+
+  .sm-ban-m img{
+    width: 100%
+  }
+
+
+
+}
+
+/** 3rd section **/
+.third {
+  background-color: rgb(230, 230, 230);
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.third h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 3em;
+}
+
+.cards1 {
+  margin: 2em 4.5em 2em 4.5em;
+  display: flex;
+  height: 100%;
+
+
+}
+
+.cards2 {
+  margin: 0em 4.5em 2em 4.5em;
+  display: flex;
+
+
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+}
+
+.mid {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 2em 2em 1.5em 2em;
+  background-color: white;
+}
+
+.m-all-cards {
+  margin: 1em 1em 1.5em 1em;
+}
+
+.m-card {
+  background-color: rgb(230, 230, 230);
+  padding: 1em 0 1.5em 1em;
+  margin-bottom: 0.5em;
+
+}
+
+@media only screen and (min-width: 480px) {
+  .m-all-cards {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cards1,
+  .cards2 {
+    display: none;
+  }
+
+  .third {
+    background-color: white;
+    border-top: 1px solid rgb(231, 234, 244);
+    border-bottom: 1px solid rgb(231, 234, 244);
+  }
+
+  .third h1 {
+    font-size: 2.5em;
+    color: rgb(55, 55, 56);
+  }
+  .m-card:active {
+    background-color: lightgray;
+  }
+
+}
+
+/** last section **/
+
+.forth {
+  width: 100%;
+}
+
+.forth h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0
+}
+
+.vid-3-ban {
+  display: flex;
+  width: 100%;
+}
+
+.big-ban video {
+  width: 100%
+}
+
+@media only screen and (min-width: 480px) {
+  .vidm {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .vid {
+    display: none;
+  }
+  .vidm {
+    width: 100%;
+    margin: 1em 0 1.5em 0;
+  }
+  .forth h1 {
+    font-size: 2.5em;
+    color: rgb(55, 55, 56);
+  }
+}
+
+
+/** footer **/
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 4.5em;
+  border-top: 1px solid lightgray;
+}
+
+.company {
+  display: flex;
+  padding-top: 1em;
+  padding-left: 1.5em;
+  flex-grow: 1;
+}
+
+
+.terms {
+  padding-top: 1em;
+  padding-right: 1.5em;
+}
+
+.terms span{
+  padding-left: 1em;
+}
+
+.terms a {
+  color: inherit;
+}
+
+@media only screen and (max-width: 480px) {
+  .terms {
+    display: none;
+  }
+  .company {
+    padding-bottom: 1em;
+  }
+  .footer {
+    border: 0;
+  }
+}
